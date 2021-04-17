@@ -21,7 +21,7 @@
       </div>
       <button
         class="card__wrapper--add_basket"
-        @click="setShoppingProduct(product)"
+        @click.stop="setShoppingProduct(product)"
         v-if="productId !== product.id"
       >
         Sepete Ekle
@@ -32,7 +32,7 @@
       >
         <div
           class="card__wrapper--shopping_counter--btn"
-          @click="deleteShoppingProduct(product)"
+          @click.stop="deleteShoppingProduct(product)"
         >
           -
         </div>
@@ -41,7 +41,7 @@
         </div>
         <div
           class="card__wrapper--shopping_counter--btn"
-          @click="setShoppingProduct(product)"
+          @click.stop="setShoppingProduct(product)"
         >
           +
         </div>
