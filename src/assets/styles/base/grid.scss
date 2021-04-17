@@ -1,0 +1,121 @@
+@media (min-width: 576px) {
+
+    .bradcrumb__container,
+    .ategories__container,
+    .footer__container--top,
+    .footer__container--bottom--info,
+    .header__container,
+    .home__container,
+    .categories__container,
+    .footer__container--bottom--info--content,
+    .detail__container {
+        max-width: 540px !important;
+    }
+
+    .footer__container--top {
+        display: flex;
+        flex-direction: column;
+
+        &--card:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .bradcrumb__container,
+    .ategories__container,
+    .footer__container--top,
+    .footer__container--bottom--info,
+    .header__container,
+    .home__container,
+    .categories__container,
+    .footer__container--bottom--info--content,
+    .detail__container {
+        max-width: 720px !important;
+    }
+
+    .footer__container--top {
+        display: flex;
+        flex-direction: column;
+
+        &--card:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .bradcrumb__container,
+    .ategories__container,
+    .footer__container--top,
+    .footer__container--bottom--info,
+    .header__container,
+    .home__container,
+    .categories__container,
+    .footer__container--bottom--info--content,
+    .detail__container {
+        max-width: 960px !important;
+    }
+
+    .footer__container--top {
+        display: flex;
+        flex-direction: column;
+
+        &--card:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .bradcrumb__container,
+    .ategories__container,
+    .footer__container--top,
+    .footer__container--bottom--info,
+    .header__container,
+    .home__container,
+    .categories__container,
+    .footer__container--bottom--info--content,
+    .detail__container {
+        max-width: 1140px !important;
+    }
+
+    .footer__container--top {
+        display: flex;
+        flex-direction: row;
+
+        &--card:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .bradcrumb__container,
+    .ategories__container,
+    .footer__container--top,
+    .footer__container--bottom--info,
+    .header__container,
+    .home__container,
+    .categories__container,
+    .footer__container--bottom--info--content,
+    .detail__container {
+        max-width: 1520px !important;
+    }
+
+    .footer__container--top {
+        display: flex;
+        flex-direction: row;
+
+        &--card:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}

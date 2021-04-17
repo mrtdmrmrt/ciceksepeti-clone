@@ -1,0 +1,38 @@
+.bradcrumb__container {
+    width: 1520px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+
+    margin-top: 10px;
+
+    &--text {
+        color: #555555;
+
+        &-active {
+            color: #51B549;
+        }
+    }
+
+    &--separator {
+        color: #555555;
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        margin: 0 6px 10px 6px;
+
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-top: 0.1em solid #555555;
+            border-right: 0.1em solid #555555;
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}

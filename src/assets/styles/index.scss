@@ -1,0 +1,16 @@
+@import "./base/normalize.scss";
+@import "./base/utilities.scss";
+@import "./base/base.scss";
+@import "./base/grid.scss";
+
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/title.scss';
+@import './components/bradcrumb.scss';
+@import './components/categories.scss';
+@import './components/cards.scss';
+
+@import './views/home.scss';
+@import './views/detail.scss';
+
+@import './animations/fade.scss';

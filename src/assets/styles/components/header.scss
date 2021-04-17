@@ -1,0 +1,185 @@
+.header__container {
+    width: 1520px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+
+    position: relative;
+
+    &--search {
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            width: 700px;
+            height: 50px;
+            position: relative;
+
+            &>img {
+                position: absolute;
+                top: 16px;
+                left: 19px;
+            }
+
+            &>input {
+                width: 100%;
+                height: 100%;
+                background: #f7f7f7 0% 0% no-repeat padding-box;
+                border: 2px solid #edf1f2;
+                border-radius: 28px;
+                outline: none;
+                padding: 0 50px;
+            }
+
+            &>button {
+                background: #51b549 0% 0% no-repeat padding-box;
+                border: 2px solid #edf1f2;
+                border-radius: 28px;
+                color: #fff;
+                outline: none;
+                width: 66px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                position: absolute;
+                top: 5px;
+                right: 6px;
+            }
+        }
+    }
+
+    &--shoppingCart {
+        width: 142px;
+        height: 50px;
+        cursor: pointer;
+        background: #044dc3 0% 0% no-repeat padding-box;
+        border-radius: 28px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+
+        &>img {
+            margin-right: 4px;
+        }
+
+        &>span {
+            font-weight: 600;
+        }
+
+        &-count {
+            width: 25px;
+            height: 25px;
+            background: #ff5b4d 0% 0% no-repeat padding-box;
+            color: #ffffff;
+            font-weight: 600;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+            top: -10px;
+            right: 2px;
+        }
+    }
+
+    &--cargo_info {
+        position: absolute;
+        bottom: -60px;
+        right: 0;
+        width: 343px;
+        height: 69px;
+        background: #f54257 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        padding: 30px 20px;
+
+        &--title {
+            text-align: left;
+            font: normal normal 600 15px/11px Source Sans Pro;
+            letter-spacing: 0px;
+            display: flex;
+            align-items: center;
+
+            &>span:not(:last-child) {
+                margin-right: 4px;
+            }
+        }
+
+        &::after {
+            content: "";
+            z-index: 100;
+            border: 1px solid transparent;
+            position: absolute;
+            right: 64px;
+            top: -6px;
+            width: 20px;
+            height: 20px;
+            transform: rotate(45deg);
+            border-bottom: 1px solid #f54257;
+            border-right: 1px solid #f54257;
+            background-color: #f54257;
+        }
+
+        &--loading {
+            margin-top: 10px;
+            background: #ffce00 0% 0% no-repeat padding-box;
+            border-radius: 22px;
+            height: 4px;
+            width: 0;
+            transform: 0.4s ease;
+
+            // &::after {
+            //     content: '';
+            //     background-color: #D8D8D8;
+            //     position: absolute;
+            //     height: 4px;
+            //     width: 300px;
+            //     z-index: 1;
+            // }
+        }
+
+        &--progress {
+            position: absolute;
+            bottom: 12px;
+            content: "";
+            background: #d8d8d8 0% 0% no-repeat padding-box;
+            border-radius: 22px;
+            opacity: 0.5;
+            height: 4px;
+            width: 300px;
+        }
+    }
+}
+
+.free-cargo {
+    background-color: #CCDAD9;
+
+    &>div>span {
+        color: #004440 !important;
+    }
+
+    &::after {
+        content: "";
+        z-index: 100;
+        border: 1px solid transparent;
+        position: absolute;
+        right: 64px;
+        top: -6px;
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg);
+        border-bottom: 1px solid #CCDAD9;
+        border-right: 1px solid #CCDAD9;
+        background-color: #CCDAD9;
+    }
+}

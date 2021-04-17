@@ -1,0 +1,104 @@
+.cards__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &>.card__wrapper:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.card__wrapper {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 272px;
+    height: 400px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e2e7e9;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+        border: 1px solid transparent;
+        box-shadow: 0px 14px 30px rgba(204, 204, 204, 0.32);
+    }
+
+    &--content {
+        text-align: left;
+        font: normal normal 600 15px/17px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #555555;
+    }
+
+    &--cargo {
+        margin-top: 4px;
+        text-align: left;
+        font: normal normal 600 15px/13px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #51b549;
+    }
+
+    &--price {
+        margin-top: 4px;
+        text-align: left;
+        font: normal normal 900 16px/13px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+
+    &--add_basket {
+        margin-top: 4px;
+        width: 242px;
+        height: 40px;
+        border: 1px solid #044dc3;
+        border-radius: 22px;
+        outline: none;
+        background-color: #fff;
+        color: #044dc3;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            background-color: #044dc3;
+            color: #fff;
+        }
+    }
+
+    &--shopping_counter {
+        margin-top: 4px;
+        width: 242px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #E2E7E9;
+        border-radius: 25px;
+        padding: 0 10px;
+
+        &--btn {
+            width: 30px;
+            height: 30px;
+            background-color: #F3F5F8;
+            border-radius: 50%;
+            color: #044dc3;
+            font-weight: 900;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--count {
+            text-align: center;
+            font: normal normal bold 22px/13px Source Sans Pro;
+            letter-spacing: 0px;
+            color: #555555;
+        }
+    }
+}
