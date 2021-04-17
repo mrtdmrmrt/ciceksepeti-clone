@@ -20,5 +20,5 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
+### Customize Website
 See [Website](http://ciceksepeti-clone.surge.sh/#/).
