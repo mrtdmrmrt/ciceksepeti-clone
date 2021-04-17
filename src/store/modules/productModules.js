@@ -22,6 +22,9 @@ export const productModules = {
     SET_SELECTED_PRODUCTS(state, data) {
       state.selectedProduct = data;
     },
+    REMOVE_SHOPPING_PRODUCTS(state) {
+      state.shoppingProducts = [];
+    },
   },
   actions: {
     setSearch(vuexContext, data) {
@@ -38,6 +41,9 @@ export const productModules = {
     },
     setSelectedProduct(vuexContext, data) {
       vuexContext.commit('SET_SELECTED_PRODUCTS', data);
+    },
+    removeShoppingProducts(vuexContext) {
+      vuexContext.commit('REMOVE_SHOPPING_PRODUCTS');
     },
   },
   getters: {

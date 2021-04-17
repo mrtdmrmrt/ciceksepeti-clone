@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-
+import store from '../store';
 Vue.use(VueRouter);
 
 //PAGES
@@ -18,6 +18,11 @@ const router = new VueRouter({
       component: () =>
         import(/* webpackChunkName: "FileDetail" */ '../views/Detail.vue'),
       name: 'detail',
+      beforeEnter: (_to, _from, next) => {
+        store.dispatch('product/removeShoppingProducts');
+
+        next();
+      },
     },
   ],
   mode: 'hash',
