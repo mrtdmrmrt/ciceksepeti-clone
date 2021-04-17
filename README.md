@@ -20,10 +20,5 @@ npm run build
 npm run lint
 ```
 
-### E2E TEST (Jypress)
-```
-npm run e2e
-```
-
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [Website](http://ciceksepeti-clone.surge.sh/#/).
