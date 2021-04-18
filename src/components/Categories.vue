@@ -110,13 +110,8 @@ export default {
     },
   },
   mounted() {
-    const startCategory = {
-      id:1,
-      name: 'Tüm Kategoriler',
-      isActive: true,
-    };
-    this.activeCategory =1;
-    this.activeCategori(startCategory);
+    this.activeCategory = 1;
+    this.activeCategori(this.categories[0]);
   },
 };
 </script>
