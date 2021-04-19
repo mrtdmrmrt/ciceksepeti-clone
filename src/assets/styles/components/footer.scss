@@ -53,6 +53,7 @@
         background: #f2f2f2 0% 0% no-repeat padding-box;
         width: 100%;
         height: 1034px;
+        position: relative;
 
         &--info {
             max-width: 1520px;
@@ -182,6 +183,8 @@
         }
 
         &--right {
+            position: absolute;
+            bottom: 0;
             margin-top: 50px;
             width: 100%;
             height: 60px;
